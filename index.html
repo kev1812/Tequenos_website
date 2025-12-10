@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Favicons: PNG for modern browsers, ICO fallback and shortcut for compatibility -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/icono.png?v=3">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/icono.png?v=3">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/icono.png?v=3">
+    <link rel="shortcut icon" href="assets/images/icono.ico?v=3">
+    <meta name="theme-color" content="#FF6B6B">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tequeños Olalla - Pastelitos y Mini Empanadas Caseras</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container-header">
+            <div class="logo">
+                <img src="assets/images/icono.png" alt="Tequeños Olalla Logo" class="logo-img">
+                <h1>Tequeños Olalla</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Bienvenido a Tequeños Olalla</h1>
+            <h3 style="color: black;">Los mejores Tequeños, Pastelitos, Mini Empanadas y Tartas de Queso Artesanales</h3>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Categories View -->
+            <div id="categoriesView" class="categories-view view visible">
+                <h2 class="section-title">Nuestras Categorías</h2>
+                <div class="categories-grid">
+                    <div class="category-card" data-category="tequenos">
+                        <div class="category-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>Tequeños</h3>
+                        <p>Delicias crujientes rellenas</p>
+                    </div>
+                    <div class="category-card" data-category="mini_empanadas">
+                        <div class="category-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>Mini Empanadas</h3>
+                        <p>Masa deliciosa en su punto</p>
+                    </div>
+                    <div class="category-card" data-category="pastelitos">
+                        <div class="category-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>Pastelitos</h3>
+                        <p>Sabores variados y exquisitos</p>
+                    </div>
+                    <div class="category-card" data-category="tartas">
+                        <div class="category-icon">
+                            <i class="fas fa-cheese"></i>
+                        </div>
+                        <h3>Tartas de Queso</h3>
+                        <p>Tartas artesanales de la más alta calidad</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Products View -->
+            <div id="productsView" class="products-view view hidden">
+                <button class="back-btn" id="backBtn">
+                    <i class="fas fa-arrow-left"></i> Volver
+                </button>
+                <h2 id="categoryTitle" class="section-title"></h2>
+                <div id="productsGrid" class="products-grid"></div>
+                <button class="back-btn" id="backBtnBottom">
+                    <i class="fas fa-arrow-left"></i> Volver
+                </button>
+            </div>
+
+            <!-- Product Details View -->
+            <div id="productDetailsView" class="product-details-view view hidden">
+                <button class="back-btn" id="backBtnDetails">
+                    <i class="fas fa-arrow-left"></i> Volver
+                </button>
+                <div class="product-details-container">
+                    <div class="product-image-container">
+                        <img id="detailImage" src="" alt="Producto" class="product-detail-image">
+                    </div>
+                    <div class="product-info">
+                        <h2 id="detailName"></h2>
+                        <p id="detailDescription" class="detail-description"></p>
+                        <div class="detail-features">
+                            <p><strong>Ingredientes principales:</strong> <span id="detailIngredients"></span></p>
+                            <p><strong>Presentación:</strong> <span id="detailPresentation"></span></p>
+                        </div>
+                        <p class="detail-note"><a href="#contacto" id="contactLink">Para realizar tu pedido, por favor contacta con nosotros.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <p class="contact-intro">Llámanos o contáctanos por WhatsApp para hacer tu pedido</p>
+            
+            <div class="contact-methods">
+                <a class="contact-card" href="tel:611173638">
+                    <i class="fas fa-phone"></i>
+                    <h3>Teléfono 1</h3>
+                    <p>611 173 638</p>
+                </a>
+
+                <a class="contact-card" href="tel:611668680">
+                    <i class="fas fa-phone"></i>
+                    <h3>Teléfono 2</h3>
+                    <p>611 668 680</p>
+                </a>
+
+                <a class="contact-card" href="https://wa.me/611173638" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>WhatsApp</h3>
+                    <p>Contactar por WhatsApp</p>
+                </a>
+
+                <a class="contact-card" href="https://www.facebook.com/Tequenos-Olalla" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-facebook"></i>
+                    <h3>Facebook</h3>
+                    <p>Síguenos en Facebook</p>
+                </a>
+
+                <a class="contact-card" href="https://www.instagram.com/tequenossantaolalla/" id="instagramCard" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram"></i>
+                    <h3>Instagram</h3>
+                    <p>Síguenos en Instagram</p>
+                </a>
+
+                <a class="contact-card" href="https://www.google.com/maps/search/Santa+Olalla+Toledo" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Ubicación</h3>
+                    <p>Santa Olalla, Toledo<br>CP 45530</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Tequeños Olalla. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
